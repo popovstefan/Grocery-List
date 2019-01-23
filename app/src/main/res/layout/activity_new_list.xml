@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewListActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLineH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <EditText
+        android:id="@+id/newListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="List name"
+        android:maxWidth="190dp"
+        android:maxLines="3"
+        android:maxLength="25" />
+
+    <Spinner
+        android:id="@+id/priority_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button_location"
+        app:layout_constraintLeft_toRightOf="@id/guideLine" />
+
+    <EditText
+        android:id="@+id/dateUntill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:hint="Choose date"
+        app:layout_constraintTop_toBottomOf="@id/guideLineH" />
+
+    <Button
+        android:id="@+id/btnAddNewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddNewListClick"
+        android:text="add"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/button_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Location"
+        android:onClick="onSetLocation"
+        app:layout_constraintTop_toBottomOf="@id/guideLineH"
+        app:layout_constraintLeft_toRightOf="@id/guideLine" />
+
+
+</android.support.constraint.ConstraintLayout>
