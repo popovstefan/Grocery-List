@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import php.com.mk.grocerylist.model.GroceryList;
+import php.com.mk.grocerylist.model.MainList;
 import php.com.mk.grocerylist.persistence.repository.GroceryListRepository;
 import php.com.mk.grocerylist.recyclerAdapters.SubListRecyclerAdapter;
 
@@ -26,6 +27,7 @@ public class ListActivity extends AppCompatActivity {
     int listId;
     List<GroceryList> products = null;
     GroceryListRepository groceryListRepository;
+    MainList selectedList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +35,14 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
         products = new ArrayList<>();
         groceryListRepository = new GroceryListRepository(this);
+        // ke probam da promenam da go pratam cel list objket za da zememe nekoi negovi drugi podatoci
+        //namesto da pravime get do baza!
         Bundle extras = getIntent().getExtras();
-        if (extras != null)
-            listId = extras.getInt("id");
+        if (extras != null) {
+            selectedList = (MainList) extras.getSerializable("selectedList");
+            listId = selectedList.getId();
+        }
+        setTitle(selectedList.getListName());
         initUI();
     }
 

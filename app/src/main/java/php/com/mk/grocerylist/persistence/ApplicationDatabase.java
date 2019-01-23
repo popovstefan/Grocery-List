@@ -29,7 +29,8 @@ public abstract class ApplicationDatabase extends RoomDatabase {
         return Room.databaseBuilder(
                 context,
                 ApplicationDatabase.class,
-                DB_NAME).build();
+                DB_NAME).fallbackToDestructiveMigration()  //bidejki pravese problemi
+                .build();
     }
 
 
