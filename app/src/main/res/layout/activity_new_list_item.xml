@@ -6,19 +6,32 @@
     android:padding="16dp"
     tools:context=".NewListItemActivity">
 
-    <EditText
-        android:id="@+id/edittext_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Product name"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+    <FrameLayout android:layout_width="match_parent"
+        android:id="@+id/frameL"
+        android:layout_height="wrap_content">
+
+        <php.com.mk.grocerylist.ui.DelayAutoCompleteTextView
+            android:id="@+id/edittext_name"
+            android:inputType="textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi|actionSearch"/>
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:visibility="gone"/>
+    </FrameLayout>
+
 
     <TextView
         android:id="@+id/textview_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edittext_name"
+        android:layout_below="@+id/frameL"
         android:layout_centerHorizontal="true"
         android:layout_margin="8dp"
         android:text="0"
