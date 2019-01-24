@@ -32,8 +32,9 @@ public class SubListRecyclerAdapter extends RecyclerView.Adapter<SubListRecycler
 
     /**
      * Method to be executed when the view holder class is created.
+     *
      * @param viewGroup in which that view holder class belongs to
-     * @param i is an index in the recycler view's list of items
+     * @param i         is an index in the recycler view's list of items
      * @return a new recycler holder view to be inserted in the recycler view
      */
     @NonNull
@@ -48,8 +49,9 @@ public class SubListRecyclerAdapter extends RecyclerView.Adapter<SubListRecycler
      * Connects (adapts) the data in the repository
      * with it's corresponding recycler view holder.
      * Also, sets on click listener for the delete (bought) grocery button.
+     *
      * @param subListRecyclerHolder is the recycler holder view object which was bound to this adapter
-     * @param i is his index in the recycler view's list
+     * @param i                     is his index in the recycler view's list
      */
     @Override
     public void onBindViewHolder(@NonNull SubListRecyclerHolder subListRecyclerHolder, int i) {
@@ -74,6 +76,7 @@ public class SubListRecyclerAdapter extends RecyclerView.Adapter<SubListRecycler
 
     /**
      * Self explanatory.
+     *
      * @return grocery count
      */
     @Override
@@ -87,6 +90,7 @@ public class SubListRecyclerAdapter extends RecyclerView.Adapter<SubListRecycler
     /**
      * Sets the grocery list.
      * Notifies it's observers about the change.
+     *
      * @param groceryRepresentation is the new list
      */
     public void updateList(List<GroceryList> groceryRepresentation) {
@@ -98,6 +102,7 @@ public class SubListRecyclerAdapter extends RecyclerView.Adapter<SubListRecycler
      * Inserts a new grocery in the repository, and
      * the list in the recycler view.
      * It's observers are notified about this change.
+     *
      * @param groceryList is the grocery to be added
      */
     public void addNewItemToTheList(final GroceryList groceryList) {

@@ -92,6 +92,7 @@ public class NewListActivity extends AppCompatActivity implements AdapterView.On
      * Creates a MainList object which is the result
      * of the user's input. Puts that object in an intent
      * and finishes the activity with an OK result.
+     *
      * @param v unused
      */
     public void onAddNewListClick(View v) {
@@ -113,6 +114,7 @@ public class NewListActivity extends AppCompatActivity implements AdapterView.On
      * Creates an explicit intent with which starts
      * the maps activity giving the user an option
      * to select a location for the new grocery list.
+     *
      * @param v unused
      */
     public void onSetLocation(View v) {
@@ -124,9 +126,10 @@ public class NewListActivity extends AppCompatActivity implements AdapterView.On
      * Sets the location of the new grocery list.
      * Is activated when the maps activity finishes.
      * The location is found in that activity's intent data.
+     *
      * @param requestCode is the code with which the maps activity was started with
-     * @param resultCode is maps' activity result code
-     * @param data is the intent the maps activity gives back after finishing
+     * @param resultCode  is maps' activity result code
+     * @param data        is the intent the maps activity gives back after finishing
      */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -141,10 +144,11 @@ public class NewListActivity extends AppCompatActivity implements AdapterView.On
 
     /**
      * Sets the priority for the new grocery list.
-     * @param parent the adapter connecting the layout element with the data in it
-     * @param view usused
+     *
+     * @param parent   the adapter connecting the layout element with the data in it
+     * @param view     usused
      * @param position which was selected in the list of priorities
-     * @param id unused
+     * @param id       unused
      */
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -153,6 +157,7 @@ public class NewListActivity extends AppCompatActivity implements AdapterView.On
 
     /**
      * Defaults the priority if none is selected
+     *
      * @param parent unused
      */
     @Override

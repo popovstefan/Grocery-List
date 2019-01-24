@@ -9,6 +9,9 @@ import java.io.Serializable;
 
 import static android.arch.persistence.room.ForeignKey.CASCADE;
 
+/**
+ * Entity class for a grocery.
+ */
 @Entity(
         foreignKeys = {
                 @ForeignKey(onDelete = CASCADE,

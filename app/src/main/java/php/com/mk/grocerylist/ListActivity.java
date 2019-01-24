@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -70,6 +70,7 @@ public class ListActivity extends AppCompatActivity {
     /**
      * Creates an explicit intent with which
      * starts a new activity for creating a new grocery.
+     *
      * @param v unused
      */
     public void onAddNewListItem(View v) {
@@ -81,9 +82,10 @@ public class ListActivity extends AppCompatActivity {
      * Adds the newly created grocery to it's list of groceries.
      * Method is activated after the new grocery activity finishes.
      * The newly created grocery is found in that activity's intent data.
+     *
      * @param requestCode is the code with which the new grocery activity was started with
-     * @param resultCode is the code the new grocery activity returns as result
-     * @param data is the intent the new grocery activity gives back after finishing
+     * @param resultCode  is the code the new grocery activity returns as result
+     * @param data        is the intent the new grocery activity gives back after finishing
      */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

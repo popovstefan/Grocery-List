@@ -17,6 +17,7 @@ public class TimeDateHelper {
 
     /**
      * Converts a string value into a date object
+     *
      * @param value is the string which is to be converted to date.
      * @return a date object representing that string.
      */
@@ -38,6 +39,7 @@ public class TimeDateHelper {
 
     /**
      * Converts a date value to string.
+     *
      * @param value is the date which is to converted to string.
      * @return a string representing that date.
      */

@@ -53,7 +53,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
 
             @Override
-            public void onError(Status status) { }
+            public void onError(Status status) {
+            }
         });
     }
 

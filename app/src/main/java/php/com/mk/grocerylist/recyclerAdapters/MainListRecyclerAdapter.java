@@ -42,8 +42,9 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
 
     /**
      * Method to be executed when the view holder class is created.
+     *
      * @param viewGroup in which that view holder class belongs to
-     * @param i is an index in the recycler view's list of items
+     * @param i         is an index in the recycler view's list of items
      * @return a new recycler holder view to be inserted in the recycler view
      */
     @NonNull
@@ -59,8 +60,9 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
      * with it's corresponding recycler view holder
      * Also, sets on click listener for the delete (done)
      * grocery list button and the email button.
+     *
      * @param mainListRecyclerHolder is the recycler holder view object which was bound to this adapter
-     * @param i is his index in the recycler view's list
+     * @param i                      is his index in the recycler view's list
      */
     @Override
     public void onBindViewHolder(@NonNull final MainListRecyclerHolder mainListRecyclerHolder, int i) {
@@ -122,6 +124,7 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
 
     /**
      * Self explanatory.
+     *
      * @return the list's size
      */
     @Override
@@ -132,6 +135,7 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
     /**
      * Sets a new list.
      * Notifies it's observers about the change.
+     *
      * @param list is the new list
      */
     public void updateMainList(List<MainList> list) {

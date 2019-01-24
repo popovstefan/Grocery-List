@@ -81,9 +81,10 @@ public class MainActivity extends AppCompatActivity {
      * repository i.e. writes it into the database.
      * Is activated after the new list activity finishes.
      * The newly created grocery list is found in that activity's intent data.
+     *
      * @param requestCode is the code with which the new grocery list activity was started
-     * @param resultCode is the new grocery list activity's result code
-     * @param data is the intent the new grocery list activity gives back after finishing
+     * @param resultCode  is the new grocery list activity's result code
+     * @param data        is the intent the new grocery list activity gives back after finishing
      */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
