@@ -17,7 +17,7 @@ public class InrFoodApiClient {
 
             ///ova e za obicen retrofit bez rxjava da funkcionira
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://inrfood.api.run/v1/ingredient/")
+                    .baseUrl("https://inrfood.api.run/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
                     .build();
