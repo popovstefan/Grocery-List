@@ -74,7 +74,8 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, ListActivity.class);
-                intent.putExtra("id", id);
+                intent.putExtra("selectedList",dataToShow);
+                //intent.putExtra("id", id);
                 context.startActivity(intent);
             }
         });

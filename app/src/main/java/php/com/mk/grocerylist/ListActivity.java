@@ -16,21 +16,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 import php.com.mk.grocerylist.model.GroceryList;
+import php.com.mk.grocerylist.model.MainList;
 import php.com.mk.grocerylist.persistence.repository.GroceryListRepository;
 import php.com.mk.grocerylist.recyclerAdapters.SubListRecyclerAdapter;
 
 public class ListActivity extends AppCompatActivity {
     private static final int NEW_LIST_ITEM_ACTIVITY = 200;
-    private SubListRecyclerAdapter subListRecyclerAdapter;
-    private int listId;
+    SubListRecyclerAdapter subListRecyclerAdapter;
+    int listId;
+    List<GroceryList> products = null;
+    GroceryListRepository groceryListRepository;
+    MainList selectedList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        products = new ArrayList<>();
+        groceryListRepository = new GroceryListRepository(this);
         Bundle extras = getIntent().getExtras();
-        if (extras != null)
-            listId = extras.getInt("id");
+        if (extras != null) {
+            selectedList = (MainList) extras.getSerializable("selectedList");
+            listId = selectedList.getId();
+        }
+        setTitle(selectedList.getListName());
         initUI();
     }
 

@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+
 import php.com.mk.grocerylist.R;
 import php.com.mk.grocerylist.model.MainList;
 
@@ -33,7 +36,9 @@ public class MainListRecyclerHolder extends RecyclerView.ViewHolder {
 
     public void bind(MainList mainList) {
         txtName.setText(mainList.getListName());
-        txtDate.setText(mainList.getListDate().toString());
+        String myFormat = "dd/MM/yyyy";
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+        txtDate.setText(sdf.format(mainList.getListDate()));
         txtPriority.setText(mainList.getPriority());
         txtLocation.setText(mainList.getLocation());
     }

@@ -96,6 +96,11 @@ public class NewListActivity extends AppCompatActivity implements AdapterView.On
      * @param v unused
      */
     public void onAddNewListClick(View v) {
+        // If the list name is empty, do nothing
+        if (text.getText().toString().trim().length() == 0 )
+            return;
+        // Else, create the MainList object
+
         // Create and set the object's properties
         MainList newList = new MainList();
         newList.setListName(text.getText().toString());

@@ -27,8 +27,10 @@
         android:layout_height="wrap_content"
         android:hint="List name"
         android:maxWidth="190dp"
-        android:maxLines="3"
-        android:maxLength="25" />
+        android:maxLines="1"
+        android:inputType="text"
+        android:maxLength="25"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <Spinner
         android:id="@+id/priority_spinner"
