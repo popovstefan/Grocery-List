@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Layout for a product in a particular grocery list -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+tools:context=".ListActivity">
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtItemSubList"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:maxLines="2"
+    app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/txtItemSubList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+<Button
+    android:id="@+id/txtItemSubListBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BOUGHT"
+    app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
-        android:id="@+id/txtItemSubListBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BOUGHT" />
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
