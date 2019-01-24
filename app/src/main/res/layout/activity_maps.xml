@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the maps activity shown when the user wants to set
+    an location where a grocery list can be bought -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +11,9 @@
 
     <fragment
         android:id="@+id/place_autocomplete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <fragment
         android:id="@+id/map"

@@ -30,7 +30,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private SupportPlaceAutocompleteFragment supportPlaceAutocompleteFragment;
-    LocationManager locationManager;
+    private LocationManager locationManager;
 
     private static final long MIN_TIME = 400;
     private static final float MIN_DISTANCE = 1000;
@@ -43,13 +43,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        /**
+         * Requests a fine location permission if one is not already granted
+         */
         String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, permissions, 1);
         }
+
+        // Google Place auto complete fragment
         supportPlaceAutocompleteFragment = (SupportPlaceAutocompleteFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.place_autocomplete);
+        // On click listener
         supportPlaceAutocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
+            /**
+             * Creates an intent and populates it with the
+             * location of the newly created grocery list.
+             * Then the activity finishes with an OK result.
+             * @param place which was selected
+             */
             @Override
             public void onPlaceSelected(Place place) {
 
@@ -61,7 +74,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             @Override
             public void onError(Status status) {
-
             }
         });
 
@@ -69,7 +81,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME, MIN_DISTANCE, this);
     }
-
 
     @Override
     public void onLocationChanged(Location location) {

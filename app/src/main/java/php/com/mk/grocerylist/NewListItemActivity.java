@@ -2,8 +2,8 @@ package php.com.mk.grocerylist;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -13,20 +13,28 @@ import php.com.mk.grocerylist.model.GroceryList;
 import php.com.mk.grocerylist.ui.AutoCompleteAdapter;
 import php.com.mk.grocerylist.ui.DelayAutoCompleteTextView;
 
+/**
+ * Activity corresponding to the screen where the user
+ * creates a new product for a particular grocery list.
+ */
 public class NewListItemActivity extends AppCompatActivity {
+
     private DelayAutoCompleteTextView mEditTextName;
-    private TextView mTextViewAmount;
-    Button buttonIncrease;
-    Button buttonDecrease;
-    Button buttonAdd;
-    private int mAmount = 0;
-    AutoCompleteAdapter autoCompleteAdapter;
+    private TextView textViewAmount;
+    private AutoCompleteAdapter autoCompleteAdapter;
+    private Button buttonIncrease;
+    private Button buttonDecrease;
+    private Button buttonAdd;
+    private int quantity = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_list_item);
         initUI();
+
+        // Setting on click listeners for the buttons
         buttonIncrease.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,19 +55,11 @@ public class NewListItemActivity extends AppCompatActivity {
         });
     }
 
-    public void addItem() {
-        if (mEditTextName.getText().toString().trim().length() == 0 || mAmount == 0)
-            return;
-        String name = mEditTextName.getText().toString();
-        Intent intent = new Intent();
-        GroceryList result = new GroceryList();
-        result.setName(name);
-        result.setQuantity(mAmount);
-        intent.putExtra("grocery_list", result);
-        setResult(Activity.RESULT_OK, intent);
-        finish();
-    }
-
+    /**
+     * Connecting the elements defined in the layout with the
+     * corresponding ones in this activity so that they can
+     * be accessed in the program code.
+     */
     public void initUI() {
 
         mEditTextName = findViewById(R.id.edittext_name);
@@ -77,21 +77,50 @@ public class NewListItemActivity extends AppCompatActivity {
             }
         });
 
-        mTextViewAmount = findViewById(R.id.textview_amount);
+        textViewAmount = findViewById(R.id.textview_amount);
         buttonIncrease = findViewById(R.id.button_increase);
         buttonDecrease = findViewById(R.id.button_decrease);
         buttonAdd = findViewById(R.id.button_add);
     }
 
-    private void increase() {
-        mAmount++;
-        mTextViewAmount.setText(String.valueOf(mAmount));
+    /**
+     * Creates a GroceryList object which is the result
+     * of the user's input. Puts that object in an intent
+     * and finishes the activity with an OK result.
+     */
+    public void addItem() {
+        // If the item name is empty, do nothing
+        if (mEditTextName.getText().toString().trim().length() == 0 || quantity == 0)
+            return;
+        // Else, create the GroceryList object
+        String name = mEditTextName.getText().toString();
+        GroceryList result = new GroceryList();
+        result.setName(name);
+        result.setQuantity(quantity);
+        // Put it into an intent
+        Intent intent = new Intent();
+        intent.putExtra("grocery_list", result);
+        // Set the result to OK and finish with this activity
+        setResult(Activity.RESULT_OK, intent);
+        finish();
     }
 
+
+    /**
+     * Increase the item's quantity value.
+     */
+    private void increase() {
+        quantity++;
+        textViewAmount.setText(String.valueOf(quantity));
+    }
+
+    /**
+     * Decrease the item's quantity value.
+     */
     private void decrease() {
-        if (mAmount > 0) {
-            mAmount--;
-            mTextViewAmount.setText(String.valueOf(mAmount));
+        if (quantity > 0) {
+            quantity--;
+            textViewAmount.setText(String.valueOf(quantity));
         }
     }
 }
