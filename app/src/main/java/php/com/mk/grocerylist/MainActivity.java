@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 if (items == null || items.size() == 0) {
                     Toast.makeText(getApplicationContext(), "All groceries are bought!", Toast.LENGTH_SHORT).show();
                 } else {
-                    mainListRecyclerAdapter.addNewItemToTheList(items);
+                    mainListRecyclerAdapter.updateMainList(items);
                 }
             }
         });

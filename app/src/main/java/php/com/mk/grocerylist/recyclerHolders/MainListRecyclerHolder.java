@@ -14,7 +14,10 @@ import java.util.Date;
 import php.com.mk.grocerylist.R;
 import php.com.mk.grocerylist.model.MainList;
 
-
+/**
+ * Recycler holder class for a particular grocery list.
+ * Parametrized constructor with getter and setter methods.
+ */
 public class MainListRecyclerHolder extends RecyclerView.ViewHolder {
     private TextView txtName;
     private TextView txtDate;

@@ -8,7 +8,10 @@ import android.widget.TextView;
 
 import php.com.mk.grocerylist.R;
 
-
+/**
+ * Recycler holder class for a particular grocery list.
+ * Parametrized constructor with getter and setter methods.
+ */
 public class SubListRecyclerHolder extends RecyclerView.ViewHolder {
     private TextView textView;
     private Button boughtButton;
