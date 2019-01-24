@@ -1,20 +1,18 @@
 package php.com.mk.grocerylist.recyclerHolders;
 
 import android.support.annotation.NonNull;
-import android.support.v4.widget.CircularProgressDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import php.com.mk.grocerylist.R;
 import php.com.mk.grocerylist.model.MainList;
 
-
+/**
+ * Recycler holder class for a particular grocery list.
+ * Parametrized constructor with getter and setter methods.
+ */
 public class MainListRecyclerHolder extends RecyclerView.ViewHolder {
     private TextView txtName;
     private TextView txtDate;

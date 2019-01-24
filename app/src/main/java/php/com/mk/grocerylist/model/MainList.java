@@ -10,6 +10,9 @@ import java.util.Date;
 
 import php.com.mk.grocerylist.utils.TimeDateHelper;
 
+/**
+ * Entity class for a grocery list.
+ */
 @Entity(tableName = "List")
 public class MainList implements Serializable {
     @PrimaryKey(autoGenerate = true)
