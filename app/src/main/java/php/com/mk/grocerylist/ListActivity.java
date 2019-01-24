@@ -6,6 +6,7 @@ import android.arch.lifecycle.Observer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -27,6 +28,7 @@ public class ListActivity extends AppCompatActivity {
     List<GroceryList> products = null;
     GroceryListRepository groceryListRepository;
     MainList selectedList;
+    FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,18 +76,24 @@ public class ListActivity extends AppCompatActivity {
                     subListRecyclerAdapter.updateList(groceryLists);
             }
         });
+
+        fab=findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Creates an explicit intent with which starts
+             * an activity for creating a new grocery.
+             *
+             * @param view unused
+             */
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), NewListItemActivity.class);
+                startActivityForResult(intent, NEW_LIST_ITEM_ACTIVITY);
+            }
+        });
     }
 
-    /**
-     * Creates an explicit intent with which
-     * starts a new activity for creating a new grocery.
-     *
-     * @param v unused
-     */
-    public void onAddNewListItem(View v) {
-        Intent intent = new Intent(this, NewListItemActivity.class);
-        startActivityForResult(intent, NEW_LIST_ITEM_ACTIVITY);
-    }
 
     /**
      * Adds the newly created grocery to it's list of groceries.
