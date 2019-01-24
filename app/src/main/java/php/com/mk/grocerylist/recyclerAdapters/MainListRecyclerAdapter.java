@@ -74,39 +74,41 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, ListActivity.class);
-                intent.putExtra("selectedList",dataToShow);
+                intent.putExtra("selectedList", dataToShow);
                 //intent.putExtra("id", id);
                 context.startActivity(intent);
             }
         });
 
-        /**
-         * On click listener which creates an implicit intent
-         * for sending e-mail with the following content:
-         * (1) receiver email (always empty, so the user can enter it in the email app)
-         * (2) subject (always "Groceries list"
-         * (3) body text containing all groceries and the corresponding quantities that are to be bought
-         * This method starts a dialog with the user in which
-         * an email app is chosen to deal with the implicit intent.
+        /*
+          On click listener which creates an implicit intent
+          for sending e-mail with the following content:
+          (1) receiver email (always empty, so the user can enter it in the email app)
+          (2) subject (always "Groceries list"
+          (3) body text containing all groceries and the corresponding quantities that are to be bought
+          This method starts a dialog with the user in which
+          an email app is chosen to deal with the implicit intent.
          */
         mainListRecyclerHolder.getBtnEmail().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final List<GroceryList> data = groceryListRepository.getGroceriesForListId(id).getValue();
-                final StringBuilder body = new StringBuilder();
-                if (data != null) {
-                    for (GroceryList groceryList : data)
-                        body.append(String.format(Locale.US, "Product: %s\nQuantity: %d\n", groceryList.getName(), groceryList.getQuantity()));
-                }
                 final String email = "";
                 final String subject = "Groceries list";
                 final String chooserTitle = "Email using";
                 final Uri uri = Uri.parse("mailto:" + email)
                         .buildUpon()
                         .appendQueryParameter("subject", subject)
-                        .appendQueryParameter("body", body.toString())
                         .build();
-                final Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
+                Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
+
+                final StringBuilder body = new StringBuilder();
+                final List<GroceryList> data = groceryListRepository.getGroceriesForListId(id).getValue();
+                if (data != null) {
+                    for (GroceryList groceryList : data)
+                        body.append(String.format(Locale.US, "Product: %s\nQuantity: %d\n", groceryList.getName(), groceryList.getQuantity()));
+                    body.append(String.format("\n\nAt %s", dataToShow.getLocation()));
+                    intent.putExtra(Intent.EXTRA_TEXT, body.toString());
+                }
                 context.startActivity(Intent.createChooser(intent, chooserTitle));
             }
         });

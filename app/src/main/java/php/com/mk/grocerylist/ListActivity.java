@@ -39,9 +39,11 @@ public class ListActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             selectedList = (MainList) extras.getSerializable("selectedList");
-            listId = selectedList.getId();
+            if (selectedList != null) {
+                listId = selectedList.getId();
+                setTitle(selectedList.getListName());
+            }
         }
-        setTitle(selectedList.getListName());
         initUI();
     }
 
@@ -77,7 +79,7 @@ public class ListActivity extends AppCompatActivity {
             }
         });
 
-        fab=findViewById(R.id.fab);
+        fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             /**
              * Creates an explicit intent with which starts

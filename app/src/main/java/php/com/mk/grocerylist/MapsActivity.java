@@ -44,14 +44,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        /**
-         * Requests a fine location permission if one is not already granted
-         */
-        String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, permissions, 1);
-        }
-
         // Google Place auto complete fragment
         supportPlaceAutocompleteFragment = (SupportPlaceAutocompleteFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.place_autocomplete);
@@ -100,13 +92,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) { }
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+    }
 
     @Override
-    public void onProviderEnabled(String provider) { }
+    public void onProviderEnabled(String provider) {
+    }
 
     @Override
-    public void onProviderDisabled(String provider) { }
+    public void onProviderDisabled(String provider) {
+    }
 
     /**
      * Manipulates the map once available.

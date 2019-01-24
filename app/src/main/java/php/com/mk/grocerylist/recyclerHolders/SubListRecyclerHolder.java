@@ -7,27 +7,35 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import php.com.mk.grocerylist.R;
+import php.com.mk.grocerylist.model.GroceryList;
 
 /**
  * Recycler holder class for a particular grocery list.
- * Parametrized constructor with getter and setter methods.
+ * Each view has getter and setter methods.
  */
 public class SubListRecyclerHolder extends RecyclerView.ViewHolder {
-    private TextView textView;
+    private TextView nameTextView;
+    private TextView quantityTextView;
     private Button boughtButton;
 
     public SubListRecyclerHolder(@NonNull View itemView) {
         super(itemView);
-        textView = itemView.findViewById(R.id.txtItemSubList);
+        nameTextView = itemView.findViewById(R.id.txtItemSubList);
+        quantityTextView = itemView.findViewById(R.id.txtQuantity);
         boughtButton = itemView.findViewById(R.id.txtItemSubListBtn);
     }
 
-    public TextView getTextView() {
-        return textView;
+    public void bind(final GroceryList groceryList) {
+        nameTextView.setText(groceryList.getName());
+        quantityTextView.setText(String.valueOf(groceryList.getQuantity()));
     }
 
-    public void setTextView(TextView textView) {
-        this.textView = textView;
+    public TextView getNameTextView() {
+        return nameTextView;
+    }
+
+    public void setNameTextView(TextView nameTextView) {
+        this.nameTextView = nameTextView;
     }
 
     public Button getBoughtButton() {
@@ -36,6 +44,12 @@ public class SubListRecyclerHolder extends RecyclerView.ViewHolder {
 
     public void setBoughtButton(Button boughtButton) {
         this.boughtButton = boughtButton;
+    }
+
+    public TextView getQuantityTextView() { return quantityTextView; }
+
+    public void setQuantityTextView(TextView quantityTextView) {
+        this.quantityTextView = quantityTextView;
     }
 }
 

@@ -1,10 +1,13 @@
 package php.com.mk.grocerylist;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -97,7 +100,7 @@ public class NewListActivity extends AppCompatActivity implements AdapterView.On
      */
     public void onAddNewListClick(View v) {
         // If the list name is empty, do nothing
-        if (text.getText().toString().trim().length() == 0 )
+        if (text.getText().toString().trim().length() == 0)
             return;
         // Else, create the MainList object
 
@@ -116,15 +119,32 @@ public class NewListActivity extends AppCompatActivity implements AdapterView.On
     }
 
     /**
-     * Creates an explicit intent with which starts
-     * the maps activity giving the user an option
-     * to select a location for the new grocery list.
+     * If a permission for ACCESS_COARSE_LOCATION or
+     * ACCESS_FINE_LOCATION is granted, the it creates
+     * an explicit intent with which starts the maps activity
+     * giving the user an option to select a location for the
+     * new grocery list. Else, those permissions are requested
+     * and the method gets called back again.
      *
      * @param v unused
      */
     public void onSetLocation(View v) {
-        Intent intent = new Intent(this, MapsActivity.class);
-        startActivityForResult(intent, REQUEST_LOCATION);
+        /*
+         * Requests a location permissions if they are not already granted
+         * and call this method again
+         */
+        String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, permissions, 1);
+
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+                    || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+                this.onSetLocation(v);
+        } else {
+            Intent intent = new Intent(this, MapsActivity.class);
+            startActivityForResult(intent, REQUEST_LOCATION);
+        }
     }
 
     /**
