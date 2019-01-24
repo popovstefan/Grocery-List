@@ -31,4 +31,14 @@ public class GroceryListRepository {
                 .groceryListDao()
                 .getGroceriesForList(listId);
     }
+
+    public void deleteItem(final GroceryList item) {
+        new AsyncTask<Void, Void, Void>() {
+            @Override
+            protected Void doInBackground(Void... voids) {
+                ApplicationDatabase.getInstance(context).groceryListDao().delete(item);
+                return null;
+            }
+        }.execute();
+    }
 }

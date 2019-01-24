@@ -3,7 +3,6 @@ package php.com.mk.grocerylist.recyclerAdapters;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,19 +11,14 @@ import java.util.List;
 
 import php.com.mk.grocerylist.R;
 import php.com.mk.grocerylist.model.GroceryList;
-import php.com.mk.grocerylist.model.MainList;
 import php.com.mk.grocerylist.persistence.repository.GroceryListRepository;
-import php.com.mk.grocerylist.persistence.repository.MainListRepository;
 import php.com.mk.grocerylist.recyclerHolders.SubListRecyclerHolder;
 
 public class SubListRecyclerAdapter extends RecyclerView.Adapter<SubListRecyclerHolder> {
-    private Context context;
-    private List<String> list;
     private List<GroceryList> groceryLists;
     private GroceryListRepository groceryListRepository;
 
     public SubListRecyclerAdapter(Context context, List<GroceryList> list) {
-        this.context = context;
         this.groceryLists = list;
         this.groceryListRepository = new GroceryListRepository(context);
     }
@@ -39,11 +33,21 @@ public class SubListRecyclerAdapter extends RecyclerView.Adapter<SubListRecycler
 
     @Override
     public void onBindViewHolder(@NonNull SubListRecyclerHolder subListRecyclerHolder, int i) {
-        String dataToShow = groceryLists.get(i)
-                .getName() + "\n" +
-                groceryLists.get(i).getQuantity() + "\n";
+        final GroceryList groceryList = groceryLists.get(i);
+        final int x = i;
+        String dataToShow = groceryList.getName() + "\n" +
+                groceryList.getQuantity() + "\n";
         subListRecyclerHolder.getTextView()
                 .setText(dataToShow);
+        subListRecyclerHolder.getBoughtButton()
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        groceryLists.remove(x);
+                        groceryListRepository.deleteItem(groceryList);
+                        notifyDataSetChanged();
+                    }
+                });
     }
 
     @Override
