@@ -58,7 +58,7 @@ public class SubListRecyclerAdapter extends RecyclerView.Adapter<SubListRecycler
         // Adapting the data to it's recycler holder
         final GroceryList groceryList = groceryLists.get(i);
         final int x = i;
-        String dataToShow = groceryList.getName() + "\n" +
+        String dataToShow = groceryList.getName() + "\n" + "Quantity: " +
                 groceryList.getQuantity() + "\n";
         subListRecyclerHolder.getTextView()
                 .setText(dataToShow);

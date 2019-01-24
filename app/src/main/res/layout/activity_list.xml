@@ -12,12 +12,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <Button
-        android:id="@+id/addNewItemBtn"
+    <android.support.constraint.Guideline
+        android:id="@+id/line"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.423" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onAddNewListItem"
-        android:text="add new product"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintLeft_toLeftOf="@id/line"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"/>
 
 </android.support.constraint.ConstraintLayout>

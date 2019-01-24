@@ -6,6 +6,7 @@ import android.arch.lifecycle.Observer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayoutManager linearLayoutManager;
     List<MainList> list;
     MainListRepository mainListRepository;
+    FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,18 +65,24 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        fab=findViewById(R.id.floatingActionButton);
+        fab.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Creates an explicit intent with which starts
+             * an activity for creating a new grocery list.
+             *
+             * @param view unused
+             */
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), NewListActivity.class);
+                startActivityForResult(intent, NEW_LIST_ACTIVITY_CODE);
+            }
+        });
     }
 
-    /**
-     * Creates an explicit intent with which starts
-     * an activity for creating a new grocery list.
-     *
-     * @param v unused
-     */
-    public void onNewListClick(View v) {
-        Intent intent = new Intent(this, NewListActivity.class);
-        startActivityForResult(intent, NEW_LIST_ACTIVITY_CODE);
-    }
 
     /**
      * Adds the newly created grocery list to the
