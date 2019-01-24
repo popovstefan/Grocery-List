@@ -5,19 +5,22 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import php.com.mk.grocerylist.model.GroceryList;
+import php.com.mk.grocerylist.ui.AutoCompleteAdapter;
+import php.com.mk.grocerylist.ui.DelayAutoCompleteTextView;
 
 public class NewListItemActivity extends AppCompatActivity {
-    private EditText mEditTextName; //ovde AutoComplete
+    private DelayAutoCompleteTextView mEditTextName;
     private TextView mTextViewAmount;
     Button buttonIncrease;
     Button buttonDecrease;
     Button buttonAdd;
     private int mAmount = 0;
+    AutoCompleteAdapter autoCompleteAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +61,22 @@ public class NewListItemActivity extends AppCompatActivity {
     }
 
     public void initUI() {
+
         mEditTextName = findViewById(R.id.edittext_name);
+        mEditTextName.setThreshold(4);
+        autoCompleteAdapter =
+                new AutoCompleteAdapter(this, android.R.layout.simple_list_item_1);
+        mEditTextName.setAdapter(autoCompleteAdapter);
+        mEditTextName.setLoadingIndicator(
+                (android.widget.ProgressBar) findViewById(R.id.pb_loading_indicator));
+        mEditTextName.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                String product = (String) adapterView.getItemAtPosition(position);
+                mEditTextName.setText(product);
+            }
+        });
+
         mTextViewAmount = findViewById(R.id.textview_amount);
         buttonIncrease = findViewById(R.id.button_increase);
         buttonDecrease = findViewById(R.id.button_decrease);
