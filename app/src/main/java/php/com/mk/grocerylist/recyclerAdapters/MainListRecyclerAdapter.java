@@ -68,6 +68,15 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
     public void onBindViewHolder(@NonNull final MainListRecyclerHolder mainListRecyclerHolder, int i) {
         final MainList dataToShow = list.get(i);
         final int id = dataToShow.getId();
+        final StringBuilder text = new StringBuilder();
+        // TODO: This data is always null. Make it not
+        final List<GroceryList> data = groceryListRepository.getGroceriesForListId(id)
+                .getValue();
+        if (data != null) {
+            for (GroceryList groceryList : data)
+                text.append(String.format(Locale.US, "Product: %s\nQuantity: %d\n", groceryList.getName(), groceryList.getQuantity()));
+        }
+        text.append(String.format("\n\nAt %s", dataToShow.getLocation()));
         final int x = i;
         mainListRecyclerHolder.bind(dataToShow);
         mainListRecyclerHolder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -100,15 +109,7 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
                         .appendQueryParameter("subject", subject)
                         .build();
                 Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
-
-                final StringBuilder body = new StringBuilder();
-                final List<GroceryList> data = groceryListRepository.getGroceriesForListId(id).getValue();
-                if (data != null) {
-                    for (GroceryList groceryList : data)
-                        body.append(String.format(Locale.US, "Product: %s\nQuantity: %d\n", groceryList.getName(), groceryList.getQuantity()));
-                    body.append(String.format("\n\nAt %s", dataToShow.getLocation()));
-                    intent.putExtra(Intent.EXTRA_TEXT, body.toString());
-                }
+                intent.putExtra(Intent.EXTRA_TEXT, text.toString());
                 context.startActivity(Intent.createChooser(intent, chooserTitle));
             }
         });
