@@ -16,7 +16,7 @@ public class TescoApiClient {
 
             ///ova e za obicen retrofit bez rxjava da funkcionira
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://dev.tescolabs.com/grocery/products/?&offset=0&limit=10")
+                    .baseUrl("https://dev.tescolabs.com/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
                     .build();

@@ -7,4 +7,12 @@ import java.util.List;
 public class TescoProducts {
     @SerializedName(value = "results")
     List<TescoResult> results;
+
+    public List<TescoResult> getResults() {
+        return results;
+    }
+
+    public void setResults(List<TescoResult> results) {
+        this.results = results;
+    }
 }
