@@ -30,10 +30,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
         requestFineLocationPermission();
+
+        // Google Place auto complete fragment
         supportPlaceAutocompleteFragment = (SupportPlaceAutocompleteFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.place_autocomplete);
+        // On click listener
         supportPlaceAutocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
+            /**
+             * Creates an intent and populates it with the
+             * location of the newly created grocery list.
+             * Then the activity finishes with an OK result.
+             * @param place which was selected
+             */
             @Override
             public void onPlaceSelected(Place place) {
                 Intent intent = new Intent();
@@ -43,12 +53,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
 
             @Override
-            public void onError(Status status) {
-
-            }
+            public void onError(Status status) { }
         });
     }
 
+    /**
+     * Requests a fine location permission if one is not already granted
+     */
     private void requestFineLocationPermission() {
         String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
