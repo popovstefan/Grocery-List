@@ -1,0 +1,300 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+MERGED from [com.android.support:design:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/13e009f9cf85abd04f4cd7d725e52051/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f6adf5475608105786d67c8a18e0e699/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1cd2da26893981998e16774f2c6f0df1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/a63c8a66d07ea9ccb5a099d8bc4c021c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/54c0bc6a05fedfb93e6911e83eb7a40a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/1bcba478abc1f4007098bcc0b583015a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-16.0.0.aar/47554df5190384f92a8464df37034d06/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/87c96ae1a4934c820976af58554586c2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/0a7d1ac915c8f5060e3d593964db3f81/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/da5baa381ed107513a8faf8f8f4d4fdb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f8d28e3abff2f53568348d7cb60c2761/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/5925eb1aec624a78176298a59bab7111/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/17f095a31cdb23b7e276ca257b6d21f4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/ae0646e5b1e6c1ee54c1cbcae7700b3c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32ebf86716d61de48aab72f5b02a7c7e/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ecc94fff9d74ff8ca31d3e6faf50499f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c9a013c0a6125a67ae41fc9d9033655b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/080083dd7a5357523eeed397f75932ba/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2f23c0e3725e78c538be18683d56b2d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/96c7696fa364909004cb9c3e27c4786e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f0e64527a3366f6b3a83ca473fb1b37a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/7686822fefc552d26ef44a105ec44336/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/076f0a514100735c4a5075b5c2fa2c7b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/775269ee8805a387ab86f38cf5169b84/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a278aadb0f73e8b000154e9e12633722/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/93766f881552ebc69dccbb0154056bed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8558cbaa5808b1beec71900f715c04ee/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4b7d09d5f19c4aefa874bb0fff87706f/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d4e5400ef12204651c79457b369c7b36/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/0420fbff983d46a0644091f91cd52dad/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/26fcbb29ebc6d759b02fbe7958542401/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6c20a4466aa061a9d902b69229d22bdb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5b4812a277d1bf63f2c393aface76c1c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/eb020bde8dc2fd6475d4f13eaa4d5056/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0f3e6fc74781b6dce3066e28ddc3ad8d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/27072d63960a4ecac884e800d6ca1803/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/1c33a922e1c6ad4d76f4ef40a9f64bce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/0e18a0c4df6e655faae6ac0d143a154a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0b899ca4e382b544e7986dc21056aaae/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/3d7fbe06487299cefdd33363492b6741/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+	package
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:1-53:12
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:13:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:16:5-66
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:16:19-63
+application
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:18:5-51:19
+MERGED from [com.android.support:design:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/13e009f9cf85abd04f4cd7d725e52051/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/13e009f9cf85abd04f4cd7d725e52051/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1cd2da26893981998e16774f2c6f0df1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1cd2da26893981998e16774f2c6f0df1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-16.0.0.aar/47554df5190384f92a8464df37034d06/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-16.0.0.aar/47554df5190384f92a8464df37034d06/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/87c96ae1a4934c820976af58554586c2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/87c96ae1a4934c820976af58554586c2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/5925eb1aec624a78176298a59bab7111/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/5925eb1aec624a78176298a59bab7111/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/17f095a31cdb23b7e276ca257b6d21f4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/17f095a31cdb23b7e276ca257b6d21f4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/ae0646e5b1e6c1ee54c1cbcae7700b3c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/ae0646e5b1e6c1ee54c1cbcae7700b3c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32ebf86716d61de48aab72f5b02a7c7e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32ebf86716d61de48aab72f5b02a7c7e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8558cbaa5808b1beec71900f715c04ee/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8558cbaa5808b1beec71900f715c04ee/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4b7d09d5f19c4aefa874bb0fff87706f/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4b7d09d5f19c4aefa874bb0fff87706f/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8558cbaa5808b1beec71900f715c04ee/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:23:9-35
+	android:label
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:21:9-41
+	android:roundIcon
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:22:9-54
+	android:icon
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:20:9-43
+	android:allowBackup
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:19:9-35
+	android:theme
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:24:9-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:34:9-36:55
+	android:value
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:36:13-52
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:35:13-58
+activity#php.com.mk.grocerylist.MapsActivity
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:38:9-40:68
+	android:label
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:40:13-56
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:39:13-41
+activity#php.com.mk.grocerylist.MainActivity
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:41:9-47:20
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:41:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:42:13-46:29
+action#android.intent.action.MAIN
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:43:17-69
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:43:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:45:17-77
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:45:27-74
+activity#php.com.mk.grocerylist.ListActivity
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:48:9-50
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:48:19-47
+activity#php.com.mk.grocerylist.NewListActivity
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:49:9-53
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:49:19-50
+activity#php.com.mk.grocerylist.NewListItemActivity
+ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:50:9-57
+	android:name
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml:50:19-54
+uses-sdk
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/13e009f9cf85abd04f4cd7d725e52051/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/13e009f9cf85abd04f4cd7d725e52051/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f6adf5475608105786d67c8a18e0e699/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f6adf5475608105786d67c8a18e0e699/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1cd2da26893981998e16774f2c6f0df1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/1cd2da26893981998e16774f2c6f0df1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/a63c8a66d07ea9ccb5a099d8bc4c021c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/a63c8a66d07ea9ccb5a099d8bc4c021c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/54c0bc6a05fedfb93e6911e83eb7a40a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/54c0bc6a05fedfb93e6911e83eb7a40a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/1bcba478abc1f4007098bcc0b583015a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/1bcba478abc1f4007098bcc0b583015a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-16.0.0.aar/47554df5190384f92a8464df37034d06/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-16.0.0.aar/47554df5190384f92a8464df37034d06/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/87c96ae1a4934c820976af58554586c2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/87c96ae1a4934c820976af58554586c2/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/0a7d1ac915c8f5060e3d593964db3f81/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/0a7d1ac915c8f5060e3d593964db3f81/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/da5baa381ed107513a8faf8f8f4d4fdb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/da5baa381ed107513a8faf8f8f4d4fdb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f8d28e3abff2f53568348d7cb60c2761/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f8d28e3abff2f53568348d7cb60c2761/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/5925eb1aec624a78176298a59bab7111/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/5925eb1aec624a78176298a59bab7111/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/17f095a31cdb23b7e276ca257b6d21f4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/17f095a31cdb23b7e276ca257b6d21f4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/ae0646e5b1e6c1ee54c1cbcae7700b3c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/ae0646e5b1e6c1ee54c1cbcae7700b3c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32ebf86716d61de48aab72f5b02a7c7e/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32ebf86716d61de48aab72f5b02a7c7e/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ecc94fff9d74ff8ca31d3e6faf50499f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ecc94fff9d74ff8ca31d3e6faf50499f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c9a013c0a6125a67ae41fc9d9033655b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c9a013c0a6125a67ae41fc9d9033655b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/080083dd7a5357523eeed397f75932ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/080083dd7a5357523eeed397f75932ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2f23c0e3725e78c538be18683d56b2d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2f23c0e3725e78c538be18683d56b2d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/96c7696fa364909004cb9c3e27c4786e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/96c7696fa364909004cb9c3e27c4786e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f0e64527a3366f6b3a83ca473fb1b37a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f0e64527a3366f6b3a83ca473fb1b37a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/7686822fefc552d26ef44a105ec44336/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/7686822fefc552d26ef44a105ec44336/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/076f0a514100735c4a5075b5c2fa2c7b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/076f0a514100735c4a5075b5c2fa2c7b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/775269ee8805a387ab86f38cf5169b84/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/775269ee8805a387ab86f38cf5169b84/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a278aadb0f73e8b000154e9e12633722/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/a278aadb0f73e8b000154e9e12633722/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/93766f881552ebc69dccbb0154056bed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/93766f881552ebc69dccbb0154056bed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8558cbaa5808b1beec71900f715c04ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8558cbaa5808b1beec71900f715c04ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4b7d09d5f19c4aefa874bb0fff87706f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4b7d09d5f19c4aefa874bb0fff87706f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d4e5400ef12204651c79457b369c7b36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d4e5400ef12204651c79457b369c7b36/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/0420fbff983d46a0644091f91cd52dad/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/0420fbff983d46a0644091f91cd52dad/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/26fcbb29ebc6d759b02fbe7958542401/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/26fcbb29ebc6d759b02fbe7958542401/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6c20a4466aa061a9d902b69229d22bdb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6c20a4466aa061a9d902b69229d22bdb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5b4812a277d1bf63f2c393aface76c1c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/5b4812a277d1bf63f2c393aface76c1c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/eb020bde8dc2fd6475d4f13eaa4d5056/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/eb020bde8dc2fd6475d4f13eaa4d5056/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0f3e6fc74781b6dce3066e28ddc3ad8d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0f3e6fc74781b6dce3066e28ddc3ad8d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/27072d63960a4ecac884e800d6ca1803/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/27072d63960a4ecac884e800d6ca1803/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/1c33a922e1c6ad4d76f4ef40a9f64bce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/1c33a922e1c6ad4d76f4ef40a9f64bce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/0e18a0c4df6e655faae6ac0d143a154a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/0e18a0c4df6e655faae6ac0d143a154a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0b899ca4e382b544e7986dc21056aaae/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0b899ca4e382b544e7986dc21056aaae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/3d7fbe06487299cefdd33363492b6741/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/3d7fbe06487299cefdd33363492b6741/AndroidManifest.xml:20:5-44
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/ac8596397509a4a8614f311090b2885e/AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/3960c5f3773d7bf3605fdf8cd91dd633/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/ae0646e5b1e6c1ee54c1cbcae7700b3c/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/ae0646e5b1e6c1ee54c1cbcae7700b3c/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/ae0646e5b1e6c1ee54c1cbcae7700b3c/AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32ebf86716d61de48aab72f5b02a7c7e/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32ebf86716d61de48aab72f5b02a7c7e/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] /home/stefanpopov/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2536a2f4ac99872156fe9e8b4288283a/AndroidManifest.xml:27:13-51
