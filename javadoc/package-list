@@ -1,0 +1,12 @@
+php.com.mk.grocerylist
+php.com.mk.grocerylist.apis.inrApi
+php.com.mk.grocerylist.apis.tescoApi
+php.com.mk.grocerylist.apis.tescoApi.tescoResponse
+php.com.mk.grocerylist.model
+php.com.mk.grocerylist.persistence
+php.com.mk.grocerylist.persistence.dao
+php.com.mk.grocerylist.persistence.repository
+php.com.mk.grocerylist.recyclerAdapters
+php.com.mk.grocerylist.recyclerHolders
+php.com.mk.grocerylist.ui
+php.com.mk.grocerylist.utils
