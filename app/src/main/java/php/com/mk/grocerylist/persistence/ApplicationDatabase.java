@@ -39,7 +39,7 @@ public abstract class ApplicationDatabase extends RoomDatabase {
      */
     private static ApplicationDatabase create(final Context context) {
         return Room.databaseBuilder(
-                context,
+                context.getApplicationContext(),
                 ApplicationDatabase.class,
                 DB_NAME).fallbackToDestructiveMigration()  //bidejki pravese problemi
                 .build();

@@ -1,8 +1,11 @@
 package php.com.mk.grocerylist;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,15 +16,18 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.Calendar;
 import java.util.List;
 
 import php.com.mk.grocerylist.model.MainList;
+import php.com.mk.grocerylist.notification.NotificationReceiver;
 import php.com.mk.grocerylist.persistence.repository.MainListRepository;
 import php.com.mk.grocerylist.recyclerAdapters.MainListRecyclerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final int NEW_LIST_ACTIVITY_CODE = 1000;
+    public static final String NOTIFICATION_ACTION = "Notification intent action string";
     RecyclerView recyclerView;
     MainListRecyclerAdapter mainListRecyclerAdapter;
     LinearLayoutManager linearLayoutManager;
@@ -34,6 +40,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initUI();
+    }
+
+    private void startAlarm() {
+        Intent alarmIntent = new Intent(MainActivity.this, NotificationReceiver.class);
+        alarmIntent.setAction(MainActivity.NOTIFICATION_ACTION);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, alarmIntent, 0);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        int minuteInMillis = 1000 * 60 / 1440; // one minute in millis
+        int interval = minuteInMillis * 1440;
+        // Set the alarm to start at 12:00 PM
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        calendar.set(Calendar.HOUR_OF_DAY, 12);
+        calendar.set(Calendar.MINUTE, 0);
+        // Repeat every day (1,440 minutes interval)
+        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), interval, pendingIntent);
+        Toast.makeText(MainActivity.this, "Pocna repeat", Toast.LENGTH_LONG).show();
     }
 
     /**
@@ -65,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-        fab=findViewById(R.id.floatingActionButton);
+        startAlarm();
+        fab = findViewById(R.id.floatingActionButton);
         fab.setOnClickListener(new View.OnClickListener() {
             /**
              * Creates an explicit intent with which starts

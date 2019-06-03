@@ -38,4 +38,7 @@ public interface MainListDAO {
      */
     @Query("SELECT * FROM List l ORDER BY l.listDate")
     LiveData<List<MainList>> getAll();
+
+    @Query("SELECT * FROM List l ORDER BY l.listDate")
+    List<MainList> getThem();
 }

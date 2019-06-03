@@ -158,4 +158,45 @@ public class MainListDAO_Impl implements MainListDAO {
       }
     }.getLiveData();
   }
+
+  @Override
+  public List<MainList> getThem() {
+    final String _sql = "SELECT * FROM List l ORDER BY l.listDate";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+      final int _cursorIndexOfListName = _cursor.getColumnIndexOrThrow("listName");
+      final int _cursorIndexOfListDate = _cursor.getColumnIndexOrThrow("listDate");
+      final int _cursorIndexOfPriority = _cursor.getColumnIndexOrThrow("priority");
+      final int _cursorIndexOfLocation = _cursor.getColumnIndexOrThrow("location");
+      final List<MainList> _result = new ArrayList<MainList>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final MainList _item;
+        _item = new MainList();
+        final int _tmpId;
+        _tmpId = _cursor.getInt(_cursorIndexOfId);
+        _item.setId(_tmpId);
+        final String _tmpListName;
+        _tmpListName = _cursor.getString(_cursorIndexOfListName);
+        _item.setListName(_tmpListName);
+        final Date _tmpListDate;
+        final String _tmp;
+        _tmp = _cursor.getString(_cursorIndexOfListDate);
+        _tmpListDate = TimeDateHelper.fromTimestamp(_tmp);
+        _item.setListDate(_tmpListDate);
+        final String _tmpPriority;
+        _tmpPriority = _cursor.getString(_cursorIndexOfPriority);
+        _item.setPriority(_tmpPriority);
+        final String _tmpLocation;
+        _tmpLocation = _cursor.getString(_cursorIndexOfLocation);
+        _item.setLocation(_tmpLocation);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
 }

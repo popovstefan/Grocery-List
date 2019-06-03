@@ -1,4 +1,4 @@
-#Thu Jan 24 20:39:43 CET 2019
+#Mon May 27 17:21:28 CEST 2019
 base.0=/home/stefanpopov/AndroidStudioProjects/GroceryList-master/app/build/intermediates/transforms/dexMerger/debug/6
 path.0=classes.dex
 renamed.0=classes.dex

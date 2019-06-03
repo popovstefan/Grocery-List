@@ -1499,6 +1499,7 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string channel_name
 string character_counter_content_description
 string character_counter_pattern
 string common_google_play_services_enable_button
