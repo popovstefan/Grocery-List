@@ -12,7 +12,7 @@ Clicking on the ```ADD``` button opens up a new screen where the user can input 
 
 Setting the location opens a new screen showing the user's location on the map, and providing a search bar with an auto-complete feature to search for places. Selecting such a place will set it as a grocery list location.
 
-![Places autocomplete](sfdsf)
+![Places autocomplete](https://github.com/popovstefan/GroceryList/blob/master/imgs/places-autocomplete.png)
 
 Once created, a grocery list can be clicked on to add groceries, it can be deleted with clicking on ```DONE``` meaning everything in it was bought, and it can be shared through email. Clicking on ```EMAIL``` opens up a system dialog for the user to pick an email application with which he wants to share the list.
 
