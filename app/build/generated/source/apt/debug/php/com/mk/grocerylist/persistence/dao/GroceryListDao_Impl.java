@@ -137,4 +137,41 @@ public class GroceryListDao_Impl implements GroceryListDao {
       }
     }.getLiveData();
   }
+
+  @Override
+  public List<GroceryList> fetchGroceriesForList(int listId) {
+    final String _sql = "select gl.* from GroceryList as gl where gl.list_id = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, listId);
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+      final int _cursorIndexOfListId = _cursor.getColumnIndexOrThrow("list_id");
+      final int _cursorIndexOfName = _cursor.getColumnIndexOrThrow("name");
+      final int _cursorIndexOfQuantity = _cursor.getColumnIndexOrThrow("quantity");
+      final List<GroceryList> _result = new ArrayList<GroceryList>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final GroceryList _item;
+        _item = new GroceryList();
+        final int _tmpId;
+        _tmpId = _cursor.getInt(_cursorIndexOfId);
+        _item.setId(_tmpId);
+        final int _tmpListId;
+        _tmpListId = _cursor.getInt(_cursorIndexOfListId);
+        _item.setListId(_tmpListId);
+        final String _tmpName;
+        _tmpName = _cursor.getString(_cursorIndexOfName);
+        _item.setName(_tmpName);
+        final int _tmpQuantity;
+        _tmpQuantity = _cursor.getInt(_cursorIndexOfQuantity);
+        _item.setQuantity(_tmpQuantity);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
 }

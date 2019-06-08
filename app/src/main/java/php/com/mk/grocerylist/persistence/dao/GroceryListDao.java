@@ -42,4 +42,15 @@ public interface GroceryListDao {
             "from GroceryList as gl " +
             "where gl.list_id = :listId")
     LiveData<List<GroceryList>> getGroceriesForList(int listId);
+
+    /**
+     * Self explanatory
+     *
+     * @param listId the list id
+     * @return a list of groceries belonging in the list with that id
+     */
+    @Query(value = "select gl.* " +
+            "from GroceryList as gl " +
+            "where gl.list_id = :listId")
+    List<GroceryList> fetchGroceriesForList(int listId);
 }

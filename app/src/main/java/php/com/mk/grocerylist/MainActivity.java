@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         alarmIntent.setAction(MainActivity.NOTIFICATION_ACTION);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, alarmIntent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        int minuteInMillis = 1000 * 60 / 1440; // one minute in millis
-        int interval = minuteInMillis * 1440;
+        // int minuteInMillis = 1000 * 60; // one minute in millis
+        int interval = 1000 * 60;
         // Set the alarm to start at 12:00 PM
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         calendar.set(Calendar.MINUTE, 0);
         // Repeat every day (1,440 minutes interval)
         alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), interval, pendingIntent);
-        Toast.makeText(MainActivity.this, "Pocna repeat", Toast.LENGTH_LONG).show();
+//        Toast.makeText(MainActivity.this, "Pocna repeat", Toast.LENGTH_LONG).show();
     }
 
     /**

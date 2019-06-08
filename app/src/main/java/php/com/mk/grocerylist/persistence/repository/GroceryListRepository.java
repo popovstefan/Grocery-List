@@ -47,6 +47,19 @@ public class GroceryListRepository {
                 .getGroceriesForList(listId);
     }
 
+
+     /** All groceries associated with a particular list,
+            * wrapped in a LiveData object tailored for the Observer design pattern.
+            *
+            * @param listId is the particular list id for which the groceries are to be return
+            * @return the groceries associated with that particular list
+     */
+    public List<GroceryList> fetchGroceriesForListId(final int listId) {
+        return ApplicationDatabase.getInstance(context)
+                .groceryListDao()
+                .fetchGroceriesForList(listId);
+    }
+
     /**
      * Async task for deleting a grocery item
      *

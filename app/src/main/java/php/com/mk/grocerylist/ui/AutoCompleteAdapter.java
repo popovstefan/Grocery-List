@@ -49,7 +49,7 @@ public class AutoCompleteAdapter extends ArrayAdapter<String> implements Filtera
                     //Call to the web API, parses the data and returns an ArrayList<String>
                     try {
                         mData.clear();
-                        loadProductsFromApi(constraint.toString());
+                        // loadProductsFromApi(constraint.toString());
                         loadProductsFromTescoApi(constraint.toString());
                     }
                     catch(Exception e) {

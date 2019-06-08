@@ -3,7 +3,6 @@ package php.com.mk.grocerylist.notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.arch.lifecycle.LiveData;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -22,7 +21,6 @@ import php.com.mk.grocerylist.MainActivity;
 import php.com.mk.grocerylist.R;
 import php.com.mk.grocerylist.model.MainList;
 import php.com.mk.grocerylist.persistence.ApplicationDatabase;
-import php.com.mk.grocerylist.persistence.repository.MainListRepository;
 
 public class NotificationService extends JobIntentService {
     private static final String NOTIFICATION_CONTENT_TITLE = "Grocery deadline approaching";
@@ -68,26 +66,22 @@ public class NotificationService extends JobIntentService {
     }
 
     private boolean deadlineIsNearing() {
-        Log.v(tag, "Entered deadline");
-        LiveData<List<MainList>> lists = new MainListRepository(this)
-                .getAll();
-        Log.v(tag, "AWKI Lists: [ " + lists.toString() + " ].");
-        List<MainList> lsts = ApplicationDatabase.getInstance(this.getApplicationContext())
+        List<MainList> lists = ApplicationDatabase.getInstance(this.getApplicationContext())
                 .mainListDAO()
                 .getThem();
-        Log.v(tag, "AWKI Lsts: [ " + lsts.toString() + " ].");
-        boolean isNull = lsts.size() > 0;
-        Log.v(tag, String.valueOf("AWKI Lstss: [ " + isNull + " ]"));
-        if (!isNull) {
+        Log.v(tag, "AWKI Lists: [ " + lists.toString() + " ].");
+        boolean areEmpty = lists.size() == 0;
+        Log.v(tag, String.valueOf("AWKI areEmpty: [ " + areEmpty + " ]"));
+        if (!areEmpty) {
             Calendar calendar = Calendar.getInstance();
             calendar.add(Calendar.DAY_OF_YEAR, DAYS_UNTIL_DEADLINE);
             Date deadlineDate = calendar.getTime();
 
-            for (MainList list : lsts)
+            for (MainList list : lists)
                 if (list.getListDate().before(deadlineDate))
-                    return false;
+                    return true;
         }
-        return true;
+        return false;
     }
 
     private void createNotificationChannel(Context context) {

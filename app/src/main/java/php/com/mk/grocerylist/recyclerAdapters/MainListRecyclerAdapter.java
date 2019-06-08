@@ -70,8 +70,7 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
         final int id = dataToShow.getId();
         final StringBuilder text = new StringBuilder();
         // TODO: This data is always null. Make it not
-        final List<GroceryList> data = groceryListRepository.getGroceriesForListId(id)
-                .getValue();
+        List<GroceryList> data = groceryListRepository.getGroceriesForListId(id).getValue();
         if (data != null) {
             for (GroceryList groceryList : data)
                 text.append(String.format(Locale.US, "Product: %s\nQuantity: %d\n", groceryList.getName(), groceryList.getQuantity()));
@@ -108,9 +107,9 @@ public class MainListRecyclerAdapter extends RecyclerView.Adapter<MainListRecycl
                         .buildUpon()
                         .appendQueryParameter("subject", subject)
                         .build();
-                Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
-                intent.putExtra(Intent.EXTRA_TEXT, text.toString());
-                context.startActivity(Intent.createChooser(intent, chooserTitle));
+                Intent emIntent = new Intent(Intent.ACTION_SENDTO, uri);
+                emIntent.putExtra(Intent.EXTRA_TEXT, text.toString());
+                context.startActivity(Intent.createChooser(emIntent, chooserTitle));
             }
         });
 
